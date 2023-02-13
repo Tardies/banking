@@ -1,0 +1,38 @@
+.container {
+    border-radius: 43px;
+    background: linear-gradient(225deg, #398df4, #3077cd);
+    box-shadow:  -14px 14px 24px #1e4a80,
+                14px -14px 24px #4cbeff;
+    /*border-radius: 59px;
+    background: linear-gradient(225deg, #74378c, #8a41a7);
+    box-shadow:  -11px 11px 14px #5c2b6f,
+                11px -11px 14px #a64fc9;*/
+}
+
+.navbar-expand-lg {
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+h1 {
+    font-size: 280%;
+    margin-top: -1%;
+    color: white;
+    font-family: 'e-ukrainebold';
+}
+h1:hover {
+    color: white;
+}
+
+#login {
+    margin-left:auto;
+    margin-right: 15%;
+    font-family: 'e-ukrainebold';
+    font-size: 170%;
+    background-color: black;
+    border-radius: 17px;
+    margin-top: -2%;
+}
+#login:hover {
+    background-color: rgb(49, 49, 49);
+}

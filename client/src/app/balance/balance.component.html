@@ -1,0 +1,8 @@
+<h2 style="color: white; margin-top: 7%; margin-left: 7%;">Your balance:</h2>
+<h1 style="color: white; margin-top: 7%; margin-left: 7%;">${{balance()}}</h1>
+<br/>
+<div id="transactions"><h2>Last transactions:</h2>
+    <div *ngFor="let item of transactions"><h3>{{item.name}} — {{item.come}}${{item.amount}}</h3><br />    
+    <h6 style="margin-top: -7%;">{{item.place}}</h6>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+button {
+    font-family: 'e-ukrainebold';
+    color: white;
+    background-color:#3077cd;
+    border: 3px solid white;
+    padding: 3%;
+    border-radius: 23px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+input[type=password] {
+    color: white;
+    background-color: #3077cd;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+input[type=password]:focus {
+    background-color: white;
+    color: #676569;
+    padding-left: 15px;
+}
+
+button:hover{
+    color: #676569;
+    background-color: white;
+}
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+label {
+color: white;
+display: inline-block;
+cursor: pointer;
+font-weight: bold;
+padding: 5px 20px;
+}
+
+input[type=radio]:checked + label {
+color: #676569;
+background: white;
+}
+
+label + input[type=radio] + label {
+border-left: solid 3px white;
+}

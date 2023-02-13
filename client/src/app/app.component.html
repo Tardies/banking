@@ -1,0 +1,33 @@
+<ng-container *ngIf="indicator; else Login">
+  <nav class="navbar navbar-expand-lg container">
+    <h1 class="navbar-brand">OurBank.</h1>
+    <h3 style="color: white; margin-left: 20px;">{{getName()}}</h3>
+    <button class="btn btn-primary" id="login" (click)="login()">Logout</button>
+</nav>
+<div class="container" style="margin-top: 3%; padding-bottom: 3%;">
+  <div class="row justify-content-around">
+    <div class="container col-4" style="margin-top: 7.5%; float:left;">
+      <app-balance></app-balance>
+    </div>
+    <div class="container col-4" style="margin-top: 7.5%;">
+      <app-graph></app-graph>
+    </div>
+  </div>
+  <div class="container col-10" style="margin-top: 7.5%;">
+      <app-transfer></app-transfer>
+  </div>
+</div>
+</ng-container>
+<ng-template #Login>
+  <nav class="navbar navbar-expand-lg container">
+    <h1 class="navbar-brand">OurBank.</h1>
+</nav>
+
+  <div class="container" style="margin-top: 3%; padding-bottom: 3%;">
+    <app-login></app-login>
+  </div>
+</ng-template>
+<footer style="margin-top: 7%; text-align: center; color: white; margin-bottom: 3%;">
+  <div class="container" style="padding-bottom: 1%; padding-top: 1%;"><h3>OurBank.</h3><h5>Everything for you</h5></div>
+</footer>
+
